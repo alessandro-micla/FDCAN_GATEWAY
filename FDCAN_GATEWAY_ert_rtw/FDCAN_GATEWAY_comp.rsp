@@ -1,0 +1,25 @@
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/FDCAN_GATEWAY_ert_rtw
+-I"C:/Program Files/MATLAB/R2024b/extern/include"
+-I"C:/Program Files/MATLAB/R2024b/simulink/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/ert"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/shared/can/src/scanutil"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/xcp/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/serial"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/svd/common/include"
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis.instrset/CMSIS/Core/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include/dsp
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/shared/freertos/include
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Drivers/STM32H7xx_HAL_Driver/Inc
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Middlewares/Third_Party/FreeRTOS/Source/include
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Drivers/CMSIS/Include
+-IC:/Users/aferreira/Documents/FDCAN_GATEWAY/Core/Inc
