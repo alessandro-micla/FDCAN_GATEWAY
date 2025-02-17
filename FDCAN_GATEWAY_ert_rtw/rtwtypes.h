@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'FDCAN_GATEWAY'.
  *
- * Model version                  : 2.6
+ * Model version                  : 2.8
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Thu Jan 30 10:09:56 2025
+ * C/C++ source code generated on : Mon Feb 17 10:31:07 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M

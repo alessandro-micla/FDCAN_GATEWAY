@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'FDCAN_GATEWAY'.
  *
- * Model version                  : 2.6
+ * Model version                  : 2.8
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Thu Jan 30 10:09:56 2025
+ * C/C++ source code generated on : Mon Feb 17 10:31:07 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -48,9 +48,9 @@ typedef struct {
   CAN_FD_MESSAGE_BUS FDCANRead;        /* '<S1>/FDCAN Read' */
   uint8_T CANUnpack_o1[4];             /* '<S1>/CAN Unpack' */
   uint8_T CANUnpack_o2;                /* '<S1>/CAN Unpack' */
-  uint8_T CANUnpack1_o1;               /* '<S1>/CAN Unpack1' */
+  uint8_T CANUnpack2[6];               /* '<S1>/CAN Unpack2' */
+  uint8_T CANUnpack1_o1[4];            /* '<S1>/CAN Unpack1' */
   uint8_T CANUnpack1_o2;               /* '<S1>/CAN Unpack1' */
-  uint8_T CANUnpack2[3];               /* '<S1>/CAN Unpack2' */
 } B_FDCAN_GATEWAY_T;
 
 /* Block states (default storage) for system '<Root>' */
@@ -63,13 +63,12 @@ typedef struct {
   stm32cube_blocks_FDCANWrite_F_T obj_h;/* '<S2>/FDCAN Write' */
   stm32cube_blocks_FDCANWrite_F_T obj_b;/* '<S1>/FDCAN Write2' */
   stm32cube_blocks_FDCANWrite_F_T obj_e;/* '<S1>/FDCAN Write1' */
-  stm32cube_blocks_FDCANWrite_F_T obj_hb;/* '<S1>/FDCAN Write' */
   int_T CANUnpack_ModeSignalID;        /* '<S1>/CAN Unpack' */
   int_T CANUnpack_StatusPortID;        /* '<S1>/CAN Unpack' */
-  int_T CANUnpack1_ModeSignalID;       /* '<S1>/CAN Unpack1' */
-  int_T CANUnpack1_StatusPortID;       /* '<S1>/CAN Unpack1' */
   int_T CANUnpack2_ModeSignalID;       /* '<S1>/CAN Unpack2' */
   int_T CANUnpack2_StatusPortID;       /* '<S1>/CAN Unpack2' */
+  int_T CANUnpack1_ModeSignalID;       /* '<S1>/CAN Unpack1' */
+  int_T CANUnpack1_StatusPortID;       /* '<S1>/CAN Unpack1' */
   boolean_T Memory_PreviousInput;      /* '<S1>/Memory' */
 } DW_FDCAN_GATEWAY_T;
 
@@ -78,14 +77,35 @@ struct P_FDCAN_GATEWAY_T_ {
   real_T Constant_Value;               /* Expression: 0
                                         * Referenced by: '<S1>/Constant'
                                         */
+  real_T Constant1_Value;              /* Expression: 3457
+                                        * Referenced by: '<S1>/Constant1'
+                                        */
+  real_T Constant2_Value;              /* Expression: 55
+                                        * Referenced by: '<S1>/Constant2'
+                                        */
+  real_T Constant5_Value;              /* Expression: 2598
+                                        * Referenced by: '<S1>/Constant5'
+                                        */
+  real_T Constant6_Value;              /* Expression: 55
+                                        * Referenced by: '<S1>/Constant6'
+                                        */
+  real_T Constant4_Value;              /* Expression: 1
+                                        * Referenced by: '<S1>/Constant4'
+                                        */
   boolean_T Memory_InitialCondition;
                                   /* Computed Parameter: Memory_InitialCondition
                                    * Referenced by: '<S1>/Memory'
                                    */
+  uint8_T Constant2_Value_e;           /* Computed Parameter: Constant2_Value_e
+                                        * Referenced by: '<S2>/Constant2'
+                                        */
   uint8_T Constant_Value_c;            /* Computed Parameter: Constant_Value_c
                                         * Referenced by: '<S2>/Constant'
                                         */
-  uint8_T Constant1_Value;             /* Computed Parameter: Constant1_Value
+  uint8_T Constant3_Value;             /* Computed Parameter: Constant3_Value
+                                        * Referenced by: '<S1>/Constant3'
+                                        */
+  uint8_T Constant1_Value_c;           /* Computed Parameter: Constant1_Value_c
                                         * Referenced by: '<S2>/Constant1'
                                         */
 };
@@ -134,8 +154,12 @@ extern volatile boolean_T runModel;
  * '<S1>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3'
  * '<S2>'   : 'FDCAN_GATEWAY/CANFD'
  * '<S3>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Digital Port Write1'
- * '<S4>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Digital Port Write1/ECSoC'
- * '<S5>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Digital Port Write1/ECSoC/ECSimCodegen'
+ * '<S4>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Security Master'
+ * '<S5>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Security Read1'
+ * '<S6>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Digital Port Write1/ECSoC'
+ * '<S7>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Digital Port Write1/ECSoC/ECSimCodegen'
+ * '<S8>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Security Master/Bit Concat'
+ * '<S9>'   : 'FDCAN_GATEWAY/CAN2<-->CAN3/Security Read1/Bit Concat'
  */
 #endif                                 /* FDCAN_GATEWAY_h_ */
 

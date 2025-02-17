@@ -2,7 +2,7 @@
 ## Makefile generated for component 'FDCAN_GATEWAY'. 
 ## 
 ## Makefile     : FDCAN_GATEWAY.mk
-## Generated on : Tue Oct 15 22:37:45 2024
+## Generated on : Mon Feb 17 10:31:21 2025
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/FDCAN_GATEWAY.elf
 ## Product type : executable
 ## 
@@ -215,7 +215,7 @@ DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DUSE_FULL_LL_DRIVER -DUSE_H
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=0
-DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=10 -D__FPU_PRESENT=1U -D__FPU_USED=1U -DMW_FREERTOS -DMW_EXTMODE_STACKSIZE=1024 -DSTACK_SIZE=64 -DRT -DOS_STKSIZE=128
+DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=10 -D__FPU_PRESENT=1U -D__FPU_USED=1U -DMW_FREERTOS -DMW_EXTMODE_STACKSIZE=1024 -DSTACK_SIZE=512 -DRT -DOS_STKSIZE=128
 DEFINES_STANDARD = -DMODEL=FDCAN_GATEWAY -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
 DEFINES_STM32DEVICEDRIVERBLOCKS = -DMW_FDCAN2_ENABLED=1 -DMW_FDCAN3_ENABLED=1 -DMW_FDCAN1_ENABLED=1
 
@@ -285,28 +285,25 @@ CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
 # C++ Linker
 #---------------
 
-CPP_LDFLAGS_ = --specs=nano.specs
-CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld"
+CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld" --specs=nano.specs
 
-CPP_LDFLAGS += $(CPP_LDFLAGS_) $(CPP_LDFLAGS_SKIPFORSIL)
+CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
 
 #------------------------------
 # C++ Shared Library Linker
 #------------------------------
 
-CPP_SHAREDLIB_LDFLAGS_ = --specs=nano.specs
-CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld"
+CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld" --specs=nano.specs
 
-CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_) $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
+CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
 #-----------
 # Linker
 #-----------
 
-LDFLAGS_ = --specs=nano.specs
-LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld"
+LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld" --specs=nano.specs
 
-LDFLAGS += $(LDFLAGS_) $(LDFLAGS_SKIPFORSIL)
+LDFLAGS += $(LDFLAGS_SKIPFORSIL)
 
 #---------------------
 # MEX C++ Compiler
@@ -328,10 +325,9 @@ MEX_CFLAGS += $(MEX_Compiler_BASIC)
 # Shared Library Linker
 #--------------------------
 
-SHAREDLIB_LDFLAGS_ = --specs=nano.specs
-SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld"
+SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\aferreira\Documents\FDCAN_GATEWAY\STM32CubeIDE\STM32H723VGTX_FLASH.ld" --specs=nano.specs
 
-SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_) $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
+SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
 ###########################################################################
 ## INLINED COMMANDS
