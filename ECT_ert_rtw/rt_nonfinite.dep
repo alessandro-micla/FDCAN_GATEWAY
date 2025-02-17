@@ -1,0 +1,8 @@
+rt_nonfinite.o: \
+ C:/Users/aferreira/Documents/FDCAN_GATEWAY/ECT_ert_rtw/rt_nonfinite.c \
+ C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/stmnucleo/mbed/NUCLEO_F767ZI/mbed_config.h \
+ C:/Users/aferreira/Documents/FDCAN_GATEWAY/ECT_ert_rtw/rtwtypes.h \
+ C:/Users/aferreira/Documents/FDCAN_GATEWAY/ECT_ert_rtw/rt_nonfinite.h
+C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/target/supportpackages/stmnucleo/mbed/NUCLEO_F767ZI/mbed_config.h:
+C:/Users/aferreira/Documents/FDCAN_GATEWAY/ECT_ert_rtw/rtwtypes.h:
+C:/Users/aferreira/Documents/FDCAN_GATEWAY/ECT_ert_rtw/rt_nonfinite.h:
